@@ -1,11 +1,10 @@
 name : CI workflow
+
 on: 
   push: #Event trigger for push
-    branches: 
-      - main
+    branches: [main]
   pull_request: #Event trigger for pull request
-    branches: 
-      - main
+    branches: [main]
 jobs: #set of steps that use the same runner
   build:
     runs-on: ubuntu-latest
